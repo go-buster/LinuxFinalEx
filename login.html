@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #001f3f, #001a33);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+            width: 350px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #fbc531;
+            text-align: center;
+        }
+
+        .login-container p {
+            text-align: center;
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        .login-container label {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #fbc531;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #e1a500;
+        }
+
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #fbc531;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login to the Solar System</h1>
+        <p>Explore the planets and unlock the secrets of the universe!</p>
+        <form action="/login" method="POST">
+            <label for="username">Astronaut ID</label>
+            <input type="text" id="username" name="username" placeholder="Enter your ID" required>
+
+            <label for="password">Access Code</label>
+            <input type="password" id="password" name="password" placeholder="Enter your code" required>
+
+            <button type="submit">Launch</button>
+        </form>
+        <a href="/forgot-password">Lost in Space? Recover Access</a>
+    </div>
+</body>
+</html>
